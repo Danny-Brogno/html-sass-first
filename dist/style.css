@@ -5,12 +5,56 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  background: linear-gradient(#191970, #8968CD);
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #8B8989;
 }
 
-header {
+body header,
+body main {
   text-align: center;
 }
-
-/* -------------------------------------------------------------------------- */
+body header h1 {
+  font-size: 30px;
+  color: #00FFFF;
+  padding-bottom: 50px;
+}
+body header button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: #0065bd;
+}
+body header button:first-of-type {
+  color: #ffaf00;
+}
+body header button:last-of-type {
+  color: #e0115f;
+}
+body header div {
+  margin-top: 50px;
+}
+body header div .fa-fan {
+  font-size: 40px;
+  color: #8B8386;
+  -webkit-animation: ventilatore 1s linear infinite;
+          animation: ventilatore 1s linear infinite;
+}
+@-webkit-keyframes ventilatore {
+  0% {
+    transform: rotate(1turn);
+  }
+}
+@keyframes ventilatore {
+  0% {
+    transform: rotate(1turn);
+  }
+}
+body main div {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #0065bd;
+}
